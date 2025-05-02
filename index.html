@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="pollstyle.css">
+  <title>Pollmini</title>
+</head>
+
+<body>
+  <header>
+    <div class="links">
+        <img src="img/githubprofile.png" width="150" alt="my github profile">
+        <a href="https://github.com/CreatorRidge/Poll-mini.io" class="link-button">View repository</a>
+        <a href="https://creatorridge.website/" class="link-button">Web-portfolio</a>
+    </div>
+  </header>
+  <main>
+    <h1>Poll</h1>
+    <img src="img/icon-question.png" alt="icon question" height="50">
+    <div class="container">
+      <div class="poll">
+        <form class="poll-form" action="index.html" method="post">
+          <fieldset>
+            <legend>What colours do you like on any game site?</legend>
+          <p class="poll-option">
+            <input class="answer visually-hidden" data-evaluation="dark" type="radio" name="answer" id="option1" value="dark colours">
+            <label for="option1">Dark colours</label>
+          </p>
+          <p class="poll-option">
+            <input class="answer visually-hidden" data-evaluation="neon" type="radio" name="answer" id="option2" value="dark shades and neon colours">
+            <label for="option2">Dark shades and neon colours</label>
+          </p>
+          <p class="poll-option">
+            <input class="answer visually-hidden" data-evaluation="light" type="radio" name="answer" id="option3" value="light or quiet colours">
+            <label for="option3">Light or quiet colours</label>
+          </p>
+          <p class="poll-option">
+            <input class="answer visually-hidden" data-evaluation="switch" type="radio" name="answer" id="option4" value="connecting the dark and light theme">
+            <label for="option4">Dark and Light Theme Switch</label>
+          </p>
+          <p class="poll-option">
+            <input class="answer visually-hidden" data-evaluation="bright" type="radio" name="answer" id="option5" value="bright coloured blocks">
+            <label for="option5">Bright coloured blocks</label>
+          </p>
+          <p class="poll-option">
+            <input class="answer visually-hidden" data-evaluation="personal" type="radio" name="answer" id="option6" value="my answer">
+            <label for="option6">My answer</label>
+          </p>
+          <div class="note hidden">
+            <input type="text" name="note" id="note-poll">
+            <div class="color-block">
+              <label for="color">Choose your palette:</label>
+              <input type="color" name="color" id="color" class="color">
+              <input type="color" name="color" id="color" class="color">
+              <input type="color" name="color" id="color" class="color">
+            </div>
+          </div>
+          <p>
+            <button class="button submit-button" type="submit">Send</button>
+          </p>
+        </fieldset>
+        </form>
+      </div>
+      <div class="game-site">
+        <h3 class="game-header">Simulation block</h3>
+        <button class="toggle-button hidden" type="button">Change theme</button>
+        <div class="game-body">
+          <nav class="game-navigation"><ul>
+            <li class="navigation-link">Player</li>
+            <li class="navigation-link">Information</li>
+            <li class="navigation-link">Towers</li>
+            <li class="navigation-link">Rules</li>
+            <li class="navigation-link">Settings</li></ul>
+          </nav>
+          <section class="game-play">
+            <img src="img/knight.png" alt="knight">
+          </section>
+          <section class="game-room">
+            <span>Game room</span>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+    <footer>
+      <span class="copyright">Copyright © 2025, <a href="https://creatorridge.website/">CreatorRidge</a>. All rights reserved.</span>
+    </footer>
+  <script src="pollscript.js"></script>
+</body>
+
+</html>
